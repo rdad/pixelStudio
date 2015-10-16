@@ -13,7 +13,7 @@ var pixelStudio = {
 		var self = this;
 		
 		this.init_draw();
-		this.$draw.on('mousedown', function(e){
+		/*this.$draw.on('mousedown', function(e){
 
 			var x = Math.floor(e.offsetX/self.pixel_dimension);
 			var y = Math.floor(e.offsetY/self.pixel_dimension);
@@ -23,7 +23,7 @@ var pixelStudio = {
 			var p = new Pixel(x, y, '#f00', self.pixel_dimension, pixelStudio.$draw);
 
 			pixelStudio.pixels.push(p);
-		});
+		});*/
 
 
 		console.log('pixeStudio ready to rock!');
