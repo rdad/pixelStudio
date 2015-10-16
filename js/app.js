@@ -13,17 +13,24 @@ var pixelStudio = {
 		var self = this;
 		
 		this.init_draw();
-		/*this.$draw.on('mousedown', function(e){
 
-			var x = Math.floor(e.offsetX/self.pixel_dimension);
-			var y = Math.floor(e.offsetY/self.pixel_dimension);
+		this.$draw.on('mousedown', function(e){
 
-			if(x==0 && y==0)	return;
+			console.log(e);
 
-			var p = new Pixel(x, y, '#f00', self.pixel_dimension, pixelStudio.$draw);
+			var offset = self.$draw.offset(),
+				dx = e.clientX - parseInt(offset.left),
+				dy = e.clientY - parseInt(offset.top);
 
-			pixelStudio.pixels.push(p);
-		});*/
+			var x = Math.floor(dx/self.pixel_dimension)+1;
+			var y = Math.floor(dy/self.pixel_dimension)+1;
+
+
+
+			var p =  new  Pixel(x,y,self.pixel_dimension,'#f00');	
+
+			self.pixels.push(p);
+		});
 
 
 		console.log('pixeStudio ready to rock!');

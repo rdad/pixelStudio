@@ -14,7 +14,7 @@ function Pixel(x, y, size, color) {
 	this.set_size(size);
 	this.set_position(x,y);
 
-	$('body').append(this.$el);
+	pixelStudio.$draw.append(this.$el);
 }
 
 Pixel.prototype = {
