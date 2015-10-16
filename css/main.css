@@ -56,7 +56,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+    background-color: #999;
+    margin: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 
+#draw{
+    background-color: white;
+    border: 1px solid #666;
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.pixel{
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 
 
 
